@@ -20,7 +20,7 @@ var r4=rollv();
 
 var myarray=[r1,r2,r3,r4];
 
-var val=sum(myarray)-min(myarray);
+var val=myarray.reduce(function(a,b){return a+b;})-min(myarray);
 return val;
 }
 </script>
