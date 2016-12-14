@@ -10,12 +10,19 @@ function rollv(){
 return Math.floor(Math.random()*6)+1;
 }
 function roll(){
-document.getElementById("mydiv").innerHTML=rollv();
+document.getElementById("mydiv").innerHTML=val();
 }
+function val(){
 var r1=rollv();
 var r2=rollv();
 var r3=rollv();
 var r4=rollv();
+
+var myarray=[r1,r2,r3,r4];
+
+var val=sum(myarray)-min(myarray);
+return val;
+}
 </script>
 
 <style>
